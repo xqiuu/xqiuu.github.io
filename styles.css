@@ -1,5 +1,16 @@
 body {
-    margin: 0;
+    margin: 20px;
+    padding:20px;
     background-color: #c5a9f1;
     text-align: center;
+}
+p {
+    font-family:monospace;
+}
+.gallery {
+    width:fit-content;
+    max-width:100%;
+    border: 1px solid #fff;
+    margin: 5px;
+    padding:5px;
 }
