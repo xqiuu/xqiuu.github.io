@@ -1,0 +1,159 @@
+/*fonts
+==============================================================*/
+@font-face {
+    font-family: "Libre Barcode Text";
+    src: url('fonts/Libre_Barcode_128_Text/LibreBarcode128Text-Regular.ttf')
+}
+
+@font-face {
+    font-family: "WenKai Mono";
+    src: url('fonts/LXGW_WenKai_Mono_TC/LXGWWenKaiMonoTC-Bold.ttf'),
+        url('fonts/LXGW_WenKai_Mono_TC/LXGWWenKaiMonoTC-Light.ttf'),
+        url('fonts/LXGW_WenKai_Mono_TC/LXGWWenKaiMonoTC-Regular.ttf');
+}
+
+/*navigation bar
+==============================================================*/
+.navbar {
+    display: flex;
+    flex: 100%;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: #af8ce7;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 30px;
+    font-family: "Wenkai Mono";
+}
+
+.navbar a:hover {
+    background-color: #7f81f1;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Wenkai Mono";
+}
+
+body {
+    margin: 0px;
+    padding:0px;
+    background-color: #e8dff7;
+    text-align: center;
+}
+p {
+    font-family:monospace;
+    display: block;
+}
+
+/*about
+==============================================================*/
+.about {
+    width: 800px;
+    height: 1050px;
+    background-color:#f2faf9;
+    display: block;
+    margin: auto;
+    position: relative;
+    text-align: right;
+    z-index: 1;
+}
+
+.about h1 {
+    font-family: "Libre Barcode Text";
+    font-size: 108px;
+    color: #5d9db1;
+    font-weight: normal;
+    padding: 50px 50px 10px;
+    margin: 0px;
+    text-align: left;
+}
+
+.about p {
+    font-family: "WenKai Mono";
+    font-size: 24px;
+    color:#5d9db1;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.about ul {
+    font-family: "WenKai Mono";
+    font-size: 24px;
+    color:#5d9db1;
+    padding-left: 100px;
+    text-align: left;
+    width:250px;
+}
+
+.about a {
+    font-family: 'Wenkai Mono'; 
+    font-weight: bold; 
+    color: #9176db;
+}
+
+/*gallery
+==============================================================*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+}
+
+.column img {
+    max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*cursorpet
+==============================================================*/
+.stationarypet {
+    background-color:#6b5906;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 400px;
+    left:100px;
+}
+
+.pet {
+    background-color:#ffd103;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 400px;
+    left:100px;
+}
+
+.box {
+  width:800px;
+  height: 400px;
+  display: flex;
+  position: fixed;
+  background-color: #5bb49e94;
+}
