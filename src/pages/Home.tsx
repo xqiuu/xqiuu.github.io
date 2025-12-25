@@ -3,6 +3,8 @@ import '../styles/home.css'
 import aboutImage from "../assets/about.png";
 import memoryAlbumImage from "../assets/projects/Seashells.jpg";
 import hackMITImage from "../assets/projects/banner.jpg";
+import github from "../assets/logos/github-mark.svg"
+import instagram from "../assets/logos/instagram_logo.png"
 
 export default function Home() {
   return (
@@ -18,10 +20,10 @@ export default function Home() {
         <br />
         i also enjoy writing silly stories and drawing digital art 
         <br />
-        (including the illustrations on this website! :0)
+        (including the illustrations on this website! ^^)
       </p>
     </div>
-    <img src={aboutImage} alt="about" style={{width: '30%', position: "absolute", right: "2vw", top: "15vh", zIndex: "99"}} />
+
     <div className="projects">
       <div className="project-container">
         <img src={memoryAlbumImage} alt="the memory album" />
@@ -35,10 +37,27 @@ export default function Home() {
       </div>
       <h1>projects</h1>
     </div>
+
     <div className="art">
       <h1>
         <a href="https://www.instagram.com/huskiecat25/" target="blank" style={{color: "white"}}>digital art &gt;</a>
       </h1>
+    </div>
+
+    <div className="contact">
+      <img src={aboutImage} alt="about" style={{width: '30%', float: "left", paddingLeft: "10vw", paddingRight: "10vw", verticalAlign: "middle", zIndex: "99"}} />
+      <h1>
+        find me on:
+      </h1>
+      <br />
+      <div className="socials">
+        <a href="https://github.com/xqiuu">
+          <img src={github} alt="github" />
+        </a>
+        <a href="https://www.instagram.com/huskiecat25/">
+          <img src={instagram} alt="instagram" />
+        </a>
+      </div>
     </div>
     </div>
   );
