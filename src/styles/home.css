@@ -1,46 +1,51 @@
+/* ABOUT SECTION 
+===================================== */
 .about {
     height: 110vh;
     width: 100vw;
-    justify-content: left;
-    color: white;
-    background-image: linear-gradient(
-                    to bottom right, 
-                    rgba(21, 179, 153, 0.5), 
-                    rgba(7, 10, 105, 0.5)
-                ), 
-                url('../assets/art/Forget\ Resized\ Signed-min.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(134, 196, 222);
+    background-image: linear-gradient(rgba(113, 52, 33, 0.5), rgba(47, 23, 16, 0.5)),
+                        url('../assets/art/To\ See\ You\ 2-min.jpg');
     background-size: cover;
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+    background-position: center;
 }
 
-.about h1 {
-    padding-top: 30vh;
-    padding-left: 5vw;
+.about h1, h2 {
+    mix-blend-mode: screen;
 }
 
-.about p {
-    padding-left: 5vw;
-}
 
+/* PROJECTS SECTION 
+===================================== */
 .projects {
     height: 80vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    display: flex;
     margin-bottom: 20vh;
 }
 
+.projects .gallery {
+    display: flex;
+}
+
 .project-container {
-    width: 20vw;
-    height: 20vh;
+    width: 30vw;
     margin: 10vh 5vw;
+    padding: 10px;
     font-weight: 700;
+    background: rgba(232, 181, 119, 0.678);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(73, 50, 109, 0.552);
 }
 
 .project-container img {
     width: 100%;
+    border-radius: 8px;
 }
 
 .project-description {
@@ -48,38 +53,71 @@
     font-weight: 300;
 }
 
+/* ART SECTION 
+===================================== */
 .art {
-    display: flex;
     width: 100vw;
-    height: 50vh;
-    background-image: 
-                url('../assets/art/A\ Thousand\ Years\ From\ Now\ Signed-min.jpg');
-    background-size: cover;
-    background-position-y: 170vh;
     align-items: center;
-    color: white;
 }
 
-.art h1 {
-    padding-left: 10vh;
+.art img {
+    max-height: 60vh;
+    margin: 3px;
 }
 
+.snap-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+
+  scrollbar-width: none; /* Firefox */
+}
+.snap-carousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.snap-item {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+
+.snap-item img {
+  height: 48vh;
+  max-height: 520px;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 12px 30px rgba(73, 50, 109, 0.552);
+}
+
+.snap-item .insta-handle {
+    width: 200px;
+    height: 48vh;
+    max-height: 520px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(232, 181, 119, 0.678);
+    box-shadow: 0 12px 30px rgba(73, 50, 109, 0.552);
+}
+
+
+/* CONTACT SECTION 
+===================================== */
 .contact {
-    height: 100vh;
+    height: 10vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    background-color: #b07a6a4c;
 }
 
-.socials {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1.5rem;
-  align-items: center;
-}
-
-.socials img {
+.contact-img {
   width: 3vw;
   min-width: 32px;
 }
