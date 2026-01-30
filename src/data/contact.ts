@@ -22,7 +22,7 @@ export const contacts: Contact[] = [
     },
 
     {
-        href: "www.linkedin.com/in/catherine-zhao-2b25112a0",
+        href: "https://www.linkedin.com/in/catherine-zhao-2b25112a0/",
         image: linkedin,
         alt: "linkedin",
     },
