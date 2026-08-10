@@ -2,7 +2,6 @@
 import scribbleHeroImage from "../assets/projects/ScribbleHero.png";
 import memoryAlbumImage from "../assets/projects/Seashells.jpg";
 import lowVision from "../assets/projects/lowVision.png";
-import hackMITImage from "../assets/projects/banner.jpg";
 
 export type Project = {
   title: string;
@@ -33,12 +32,5 @@ export const projects: Project[] = [
     image: lowVision,
     alt: "3d model visualization",
     description: "assistive technology project for visually impaired users",
-  },
-  {
-    title: "Task Bars (HackMIT 2025)",
-    href: "https://task-bars.vercel.app/",
-    image: hackMITImage,
-    alt: "hackmit",
-    description: "task tracker app for productivity management",
   },
 ];

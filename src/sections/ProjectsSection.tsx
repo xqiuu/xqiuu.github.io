@@ -1,16 +1,19 @@
-
 import { projects } from "../data/projects";
-import { ProjectCard } from "../components/ProjectCard";
+import { ExpandableGallery } from "../components/ExpandableGallery";
 
 export function ProjectsSection() {
+  const items = projects.map((p) => ({
+    id: p.href,
+    title: p.title,
+    image: p.image,
+    alt: p.alt,
+    description: p.description,
+    href: p.href,
+  }));
+
   return (
     <section className="projects" id="projects">
-      <div><h1>projects</h1></div>
-      <div className="gallery">
-        {projects.map((p) => (
-            <ProjectCard key={p.href} {...p} />
-        ))}
-      </div>
+      <ExpandableGallery items={items} />
     </section>
   );
 }

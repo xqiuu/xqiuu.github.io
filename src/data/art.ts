@@ -2,7 +2,8 @@ import forget from "../assets/art/Forget Resized Signed-min.jpg";
 import thousandYears from "../assets/art/A Thousand Years From Now Signed-min.jpg";
 import wishingTree from "../assets/art/Wishing Tree 3-min.jpg";
 import inHiding from "../assets/art/In Hiding 1-min.jpg";
-import vengeance from "../assets/art/Vengeance-min.jpg"
+import vengeance from "../assets/art/Vengeance-min.jpg";
+import secretPlace from "../assets/art/Secret Place.png";
 
 export type Artwork = {
     image: string;
@@ -30,4 +31,8 @@ export const art: Artwork[] = [
         image: vengeance,
         alt: "vengeance",
     },
+    {
+        image: secretPlace,
+        alt: "secret place"
+    }
 ];
