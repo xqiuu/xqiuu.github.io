@@ -8,7 +8,10 @@
   font-size: 18px;
 
   color: rgba(119, 48, 48, 0.87);
-  background-color: #f3f2e7;
+  background-image: linear-gradient(rgba(113, 52, 33, 0.5), rgba(47, 23, 16, 0.5)),
+                      url('./assets/art/To\ See\ You\ 2-min.jpg');
+  background-size: cover;
+  background-position: center;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

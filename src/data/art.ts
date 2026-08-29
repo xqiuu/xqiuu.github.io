@@ -3,6 +3,7 @@ import thousandYears from "../assets/art/A Thousand Years From Now Signed-min.jp
 import wishingTree from "../assets/art/Wishing Tree 3-min.jpg";
 import inHiding from "../assets/art/In Hiding 1-min.jpg";
 import vengeance from "../assets/art/Vengeance-min.jpg";
+import toseeyou from "../assets/art/To See You 2-min.jpg";
 import secretPlace from "../assets/art/Secret Place.png";
 
 export type Artwork = {
@@ -30,6 +31,10 @@ export const art: Artwork[] = [
     {
         image: vengeance,
         alt: "vengeance",
+    },
+    {
+        image: toseeyou,
+        alt: "to see you"
     },
     {
         image: secretPlace,

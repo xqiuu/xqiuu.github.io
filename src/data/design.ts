@@ -1,8 +1,9 @@
-import chkchkboomvertical1 from "../assets/design/chkchkboomvertical1.png";
-import chkchkboomvertical2 from "../assets/design/chkchkboomvertical2.png";
-import chkchkboomtrailer from "../assets/design/chkchkboomtrailer.png";
-import strait2taiwan from "../assets/design/strait2taiwan2026.png";
-import assistivetechposter from "../assets/design/assistivetechposter.png";
+import chkchkboomvertical1 from "../assets/design/chkchkboomvertical1.jpeg";
+import chkchkboomvertical2 from "../assets/design/chkchkboomvertical2.jpeg";
+import chkchkboomtrailer from "../assets/design/chkchkboomtrailer.jpeg";
+import strait2taiwan from "../assets/design/strait2taiwan2026.jpeg";
+import assistivetechposter from "../assets/design/assistivetechposter.jpeg";
+import assistivetechflyer from "../assets/design/assistivetechflyer.jpeg"
 
 export type DesignWork = {
   title: string;
@@ -37,5 +38,10 @@ export const design: DesignWork[] = [
         title: "Assistive Tech Poster",
         image: assistivetechposter,
         alt: "assistive tech poster",
+    },
+    {
+        title: "Assistive Tech Flyer",
+        image: assistivetechflyer,
+        alt: "assistive tech flyer",
     }
 ];
