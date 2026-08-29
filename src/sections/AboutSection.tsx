@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export function AboutSection() {
   return (
     <section className="about" id="about">
