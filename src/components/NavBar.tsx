@@ -8,7 +8,6 @@ export function NavBar() {
       <Link to="/projects">projects</Link>
       <Link to="/art">art</Link>
       <Link to="/design">design</Link>
-      <Link to="/resume">resume</Link>
     </nav>
   );
 }
